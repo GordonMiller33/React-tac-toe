@@ -58,7 +58,7 @@ export default function Game() {
             </div>
           </div>
           <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} colors={currentColors} />
-          <div className="justify-center">
+          <div className="flex justify-center">
             <td>{movesLeft}</td>
             <td>{movesRight}</td>
           </div>
