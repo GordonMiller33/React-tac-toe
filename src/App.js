@@ -50,10 +50,12 @@ export default function Game() {
   return <main className="text-gray-400 bg-gray-900 body-font h-screen">
       <div  className="container mx-auto flex w-1/2 py-10 justify-center">
         <div className="table-auto justify-center gap-2">
-          <div classname="text-center">
-            <div className="text-5xl font-bold text-green-400 inline">Tic-</div>
-            <div className="text-5xl font-bold text-red-400 inline">Tac-</div>
-            <div className="text-5xl font-bold text-blue-400 inline">Toe</div>
+          <div className="flex justify-center py-5">
+            <div className="flex w-64">
+              <div className="inline text-5xl font-bold text-green-400">Tic-</div>
+              <div className="inline text-5xl font-bold text-red-400">Tac-</div>
+              <div className="inline text-5xl font-bold text-blue-400">Toe</div>
+            </div>
           </div>
           <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} colors={currentColors} />
           <div className="justify-center">
